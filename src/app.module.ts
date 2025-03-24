@@ -18,8 +18,8 @@ import { APP_GUARD } from '@nestjs/core';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      //host: 'localhost',
-      host: 'host.docker.internal',
+      host: 'localhost',
+      //host: 'host.docker.internal',
       port: 5432,
       username: 'postgres',
       password: 'root',
