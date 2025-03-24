@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    //"module": "ESNext", //for jest
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true, //was false
+    "strictBindCallApply": true, //was false
+    "noFallthroughCasesInSwitch": true, //was false
+    "esModuleInterop": true  // Ensure compatibility with ES Modules and CommonJS
+  },
+  //"include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "test/**/*.ts"],  // Include test files as well
+  "exclude": ["node_modules"] //not org
+}

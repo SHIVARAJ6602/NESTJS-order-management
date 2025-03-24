@@ -1,0 +1,51 @@
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Test coverage
+coverage/
+
+# Environment files
+.env*
+
+# IDE configurations
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+tmp/
+
+# Version control
+.git/
+.gitignore
+
+# Documentation
+*.md
+README*
+
+# Docker files
+Dockerfile*
+docker-compose*
+
+# Local development
+.local/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets
+*.pem
+*.key
+*.crt
+
+# Miscellaneous
+*.swp
+*.swo

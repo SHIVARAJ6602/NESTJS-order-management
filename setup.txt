@@ -1,0 +1,42 @@
+commands to create and setup the project(in command prompt):
+1. create a new nestjs project
+npx @nestjs/cli new order-management
+
+2. navigate to the project directory.
+cd order-management
+
+3. install the required packages (npm: node package  manager)
+npm install
+
+4.install ORM , JWT and validator
+npm install @nestjs/typeorm typeorm pg @nestjs/config @nestjs/jwt @nestjs/passport passport passport-jwt class-validator class-transformer reflect-metadata bcryptjs
+
+5. install test tool (jest)
+npm install --save-dev jest @nestjs/testing supertest ts-jest
+npm i --save-dev @types/passport-jwt
+npm install @nestjs-query/core
+
+npx jest --init
+npm install --save-dev @babel/preset-typescript @babel/core
+npm i --save-dev @types/bcrypt
+
+
+
+setup DB
+nest g resource orders
+nest g resource orderproducts
+nest g resource customers
+nest g resource products
+
+JWT Auth Modules:
+nest generate module auth
+nest generate service auth
+nest generate controller auth
+
+
+run docker:
+docker build -t order-management .
+docker run -p 3000:3000 order-management
+
+
+

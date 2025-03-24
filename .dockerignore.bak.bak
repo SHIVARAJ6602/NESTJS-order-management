@@ -1,0 +1,40 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build outputs
+dist/
+
+# Ignore test files and coverage reports
+test/
+coverage/
+
+# Ignore environment and secret files
+.env
+*.env
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore version control directories
+.git/
+
+# Ignore temporary and debug files
+*.log
+*.tmp
+
+# Ignore documentation files
+*.md
+README*
+
+# Ignore Docker-related files
+Dockerfile*
+docker-compose*
+
+# Ignore project-specific files
+order-management.zip
+
+# Ensure the source files are included
+!src/
