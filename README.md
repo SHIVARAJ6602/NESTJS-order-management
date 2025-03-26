@@ -40,8 +40,7 @@ The application requires the following environment variables:
 4. Acess API Documant at `https://order-app-c5vdzevwdq-el.a.run.app/api-docs`.
 
 5. ER-Diagram
-
-![Alt text](./NestJS-based order management microservice ER.png)
+![alt text](<NestJS-based order management microservice ER.png>)
 
 
 ```
