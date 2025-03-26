@@ -1,5 +1,7 @@
 ```markdown
-## Running the Project with Docker
+```
+
+### Running the Project with Docker
 
 To run this project using Docker, follow the steps below:
 
@@ -22,24 +24,31 @@ The application requires the following environment variables:
 1. Clone the repository and navigate to the project directory.
 2. Build and start the services using Docker:
 
-   ```bash
-   docker build -t order-management .
-  ```
+- Build:
 
-```markdown
+   ```bash
+    docker build -t order-management .
+    ```
+
 - Then run the container:
-- `docker run -p 8080:8080 order-management`
+
+   ```bash
+   docker run -p 8080:8080 order-management
+   ```
 
 ### Access the REST API at
 
-  -`https://order-app-c5vdzevwdq-uc.a.run.app`.
+  You can access the API here: [API URL](https://order-app-c5vdzevwdq-uc.a.run.app).
+
 
 ### Access OpenAPI (Swagger)
 
-- Acsess API Documant at `https://order-app-c5vdzevwdq-uc.a.run.app/api-docs`.
+You can access the API documentation here: [API Documentation](https://order-app-c5vdzevwdq-uc.a.run.app/api-docs).
+
 
 ### ER-Diagram
 
+```
 ```
 
 - ![alt text](<NestJS-based order management microservice ER.png>)
@@ -47,8 +56,12 @@ The application requires the following environment variables:
 - [view ER description PDF](<NestJS-based order management microservice ER.pdf>)
 
 ```markdown
+```
 
 ### Postman Collections
+
+```markdown
+```
 
 - [Order Management API Postman Collection](<Order Management API Postman Collection.json>)
 - Create New user and login, Or use id=1 and passowrd='password' to generate JWT token
