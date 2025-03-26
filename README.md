@@ -34,9 +34,13 @@ The application requires the following environment variables:
 
 5. ER-Diagram
 
+  ```
+
 - ![alt text](<NestJS-based order management microservice ER.png>)
 
 - [view ER description PDF](<NestJS-based order management microservice ER.pdf>)
+
+  ```
 
 ### Exposed Ports
 
