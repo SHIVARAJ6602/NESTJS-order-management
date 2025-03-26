@@ -41,7 +41,7 @@ The application requires the following environment variables:
 
 5. ER-Diagram
 
-![Alt text](/NestJS-based%20order%20management%20microservice.png)
+![Alt text](./NestJS-based order management microservice ER.png)
 
 
 ```
