@@ -26,21 +26,21 @@ The application requires the following environment variables:
 1. Clone the repository and navigate to the project directory.
 2. Build and start the services using Docker Compose:
 
-   ```bash
-   docker-compose up --build
-   ```
+   - `bash` docker-compose up --build
 
 3. Access the application at `https://order-app-c5vdzevwdq-el.a.run.app`.
+
+4. Acess API Documant at `https://order-app-c5vdzevwdq-el.a.run.app/api-docs`.
+
+5. ER-Diagram
+
+- ![alt text](<NestJS-based order management microservice ER.png>)
+
+- [view ER description PDF](<NestJS-based order management microservice ER.pdf>)
 
 ### Exposed Ports
 
 - Application: `8080` (mapped to host `8080`).
 - Database: Not exposed to the host.
-
-4. Acess API Documant at `https://order-app-c5vdzevwdq-el.a.run.app/api-docs`.
-
-5. ER-Diagram
-![alt text](<NestJS-based order management microservice ER.png>)
-
 
 ```
