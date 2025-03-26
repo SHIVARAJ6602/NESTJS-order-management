@@ -15,18 +15,19 @@ Ensure you have Docker and Docker Compose installed on your system. The project 
 The application requires the following environment variables:
 
 - `NODE_ENV`: Set to `production`.
-- `PORT`: The port on which the application will run (default: `3000`).
-- Database service:
-  - `POSTGRES_USER`: Database username.
-  - `POSTGRES_PASSWORD`: Database password.
-  - `POSTGRES_DB`: Database name.
+- `PORT`: The port on which the application will run (`8080`).
 
 ### Steps to Build and Run
 
 1. Clone the repository and navigate to the project directory.
-2. Build and start the services using Docker Compose:
+2. Build and start the services using Docker:
 
-   - `bash` docker-compose up --build
+   ```bash
+   docker build -t order-management .
+  ```
+
+- Then run the container:
+- `docker run -p 8080:8080 order-management`
 
 3. Access the application at `https://order-app-c5vdzevwdq-el.a.run.app`.
 
@@ -34,7 +35,9 @@ The application requires the following environment variables:
 
 5. ER-Diagram
 
-  ```
+```
+
+```
 
 - ![alt text](<NestJS-based order management microservice ER.png>)
 
