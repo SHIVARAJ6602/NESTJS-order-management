@@ -26,20 +26,19 @@ The application requires the following environment variables:
    docker build -t order-management .
   ```
 
+```markdown
 - Then run the container:
 - `docker run -p 8080:8080 order-management`
 
 ### Access the REST API at
 
-  -`https://order-app-c5vdzevwdq-el.a.run.app`.
+  -`https://order-app-c5vdzevwdq-uc.a.run.app`.
 
 ### Access OpenAPI (Swagger)
 
-- Acsess API Documant at `https://order-app-c5vdzevwdq-el.a.run.app/api-docs`.
+- Acsess API Documant at `https://order-app-c5vdzevwdq-uc.a.run.app/api-docs`.
 
 ### ER-Diagram
-
-```
 
 ```
 
@@ -47,11 +46,13 @@ The application requires the following environment variables:
 
 - [view ER description PDF](<NestJS-based order management microservice ER.pdf>)
 
-  ```
+```markdown
 
 ### Postman Collections
 
 - [Order Management API Postman Collection](<Order Management API Postman Collection.json>)
+- Create New user and login, Or use id=1 and passowrd='password' to generate JWT token
+- Use JWT token to access protected routes using POSTMAN or other service
 
 ### Exposed Ports
 

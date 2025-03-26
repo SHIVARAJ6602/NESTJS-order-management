@@ -20,8 +20,12 @@ export class JwtAuthGuard extends AuthGuard('jwt') {
     }
 
     // If there's an error or no user, throw an UnauthorizedException
-    if (err || !user) {
-      throw err || new UnauthorizedException('You are not authorized!');
+    if (err) {
+      throw new UnauthorizedException(`An error occurred: ${err.message}`);
+    }
+
+    if (!user) {
+      new UnauthorizedException('You are not authorized!');
     }
 
     return user; // Otherwise, return the authenticated user
