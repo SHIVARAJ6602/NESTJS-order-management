@@ -14,7 +14,8 @@ export class JwtAuthStrategy extends PassportStrategy(JwtStrategyBase) { // Rena
         super({
           jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
           ignoreExpiration: false,
-          secretOrKey: configService.get<string>('JWT_SECRET') || 'f9452760852534fed90f36549f83fd5aa2789b34989a79273a9e4584b04ab030f0e3ae4267eb9d4cee005b5c1de399fa92502037aa7873fc9c86b0ec52777026',  // Use secret from environment or default
+          //secretOrKey: configService.get<string>('JWT_SECRET') || 'f9452760852534fed90f36549f83fd5aa2789b34989a79273a9e4584b04ab030f0e3ae4267eb9d4cee005b5c1de399fa92502037aa7873fc9c86b0ec52777026',  // Use secret from environment or default
+          secretOrKey: 'f9452760852534fed90f36549f83fd5aa2789b34989a79273a9e4584b04ab030f0e3ae4267eb9d4cee005b5c1de399fa92502037aa7873fc9c86b0ec52777026',  // Use secret from environment or default
         });
       }
 

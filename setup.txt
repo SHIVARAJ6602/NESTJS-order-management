@@ -38,5 +38,33 @@ run docker:
 docker build -t order-management .
 docker run -p 3000:3000 order-management
 
+swagger
+
+npm install @nestjs/swagger swagger-ui-express
+
+
+docker deployment:
+    Build and Push Your Docker Image to Google Container Registry
+    docker build -t gcr.io/order-management/order-app:v1 .
+    docker build -t gcr.io/nodal-algebra-425312-e0/order-management/order-app:v1 .
+    docker build -t gcr.io/nodal-algebra-425312-e0/order-management/order-app:v1 .
+
+
+
+    gcloud auth configure-docker
+
+    docker push gcr.io/order-management/order-app:v1
+    docker push gcr.io/nodal-algebra-425312-e0/order-management/order-app:v1
+
+
+    Deploy to Google Cloud Run
+    gcloud run deploy order-service \
+    --image gcr.io/order-management/order-app:v1 \
+    --platform managed \
+    --region us-central1 \
+    --allow-unauthenticated
+
+    https://order-service-xyz.a.run.app
+
 
 
