@@ -29,11 +29,15 @@ The application requires the following environment variables:
 - Then run the container:
 - `docker run -p 8080:8080 order-management`
 
-3. Access the application at `https://order-app-c5vdzevwdq-el.a.run.app`.
+### Access the REST API at
 
-4. Acess API Documant at `https://order-app-c5vdzevwdq-el.a.run.app/api-docs`.
+  -`https://order-app-c5vdzevwdq-el.a.run.app`.
 
-5. ER-Diagram
+### Access OpenAPI (Swagger)
+
+- Acsess API Documant at `https://order-app-c5vdzevwdq-el.a.run.app/api-docs`.
+
+### ER-Diagram
 
 ```
 
@@ -44,6 +48,10 @@ The application requires the following environment variables:
 - [view ER description PDF](<NestJS-based order management microservice ER.pdf>)
 
   ```
+
+### Postman Collections
+
+- [Order Management API Postman Collection](<Order Management API Postman Collection.json>)
 
 ### Exposed Ports
 
