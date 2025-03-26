@@ -19,13 +19,20 @@ import { APP_GUARD } from '@nestjs/core';
     TypeOrmModule.forRoot({
       type: 'postgres',
       //host: 'localhost',
-      host: 'host.docker.internal',
+      //host: 'host.docker.internal',
+      host: '35.238.30.28',
       port: 5432,
       username: 'postgres',
-      password: 'root',
+      //password: 'root',
+      password: 'order-management',
       database: 'order-management',
       entities: [Customer, Order, OrderProduct, Product],
       synchronize: true,
+      extra: {
+        ssl: {
+          rejectUnauthorized: false, // Disable certificate validation if needed
+        },
+      },
     }),
     OrdersModule,
     CustomersModule,

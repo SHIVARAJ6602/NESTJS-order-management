@@ -30,15 +30,18 @@ The application requires the following environment variables:
    docker-compose up --build
    ```
 
-3. Access the application at `http://localhost:3000`.
+3. Access the application at `https://order-app-c5vdzevwdq-el.a.run.app`.
 
 ### Exposed Ports
 
-- Application: `3000` (mapped to host `3000`).
+- Application: `8080` (mapped to host `8080`).
 - Database: Not exposed to the host.
 
-### Notes
+4. Acess API Documant at `https://order-app-c5vdzevwdq-el.a.run.app/api-docs`.
 
-- Ensure the `.env` file is correctly configured if used.
-- The database data is persisted in the `db_data` volume.
+5. ER-Diagram
+
+![Alt text](/NestJS-based%20order%20management%20microservice.png)
+
+
 ```

@@ -10,7 +10,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN --mount=type=cache,target=/root/.npm npm ci
+RUN --mount=type=cache,target=/root/.npm npm ci --legacy-peer-deps
 
 # Copy application source code
 COPY . .
@@ -31,10 +31,10 @@ COPY --from=builder /app/package*.json ./
 
 # Set environment variables
 ENV NODE_ENV=production
-ENV PORT=3000
+ENV PORT=8080
 
 # Expose application port
-EXPOSE 3000
+EXPOSE 8080
 
 # Run the application
 CMD ["node", "dist/main.js"]
