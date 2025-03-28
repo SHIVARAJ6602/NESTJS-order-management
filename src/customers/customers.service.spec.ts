@@ -33,10 +33,6 @@ describe('CustomersService', () => {
     customerRepository = module.get<Repository<Customer>>(getRepositoryToken(Customer));
   });
 
-  it('should be defined', () => {
-    expect(service).toBeDefined();
-  });
-
   it('should create a new customer and return the customer', async () => {
     const createCustomerDto = {
       name: 'John Doe',
